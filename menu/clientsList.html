@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des clients</title>
+    <link rel="stylesheet" href="../css/clientList.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.14.0/jquery-ui.min.js"
+    integrity="sha256-Fb0zP4jE3JHqu+IBB9YktLcSjI1Zc6J2b6gTjB0LpoM=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <h1>Liste des Clients</h1>
+
+    <div id="clientActivities" class="activities">
+
+        <p id="client_name"> </p>
+
+        <table id="activityTable" class="activity-table">
+            <thead>
+                <tr>
+                    <th>Nom de l'Activité</th>
+                    <th>Description</th>
+                    <th>Saison</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    
+    <table id="clientsTable" >
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Prénom</th>
+                <th>Nom</th>
+                <th>Sexe</th>
+                <th>Age</th>
+                <th>Email</th>
+                <th>Activités</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="../js/clientList.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENREGISTREMENT ACTIVITES</title>
+    <link rel="stylesheet" href="../css/activity.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.14.0/jquery-ui.min.js"
+    integrity="sha256-Fb0zP4jE3JHqu+IBB9YktLcSjI1Zc6J2b6gTjB0LpoM=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="form-container">
+
+        <form id="form" class="form" onsubmit="return validateForm()">
+            <h2>Ajouter une activité</h2>
+           
+            <!--Nom de l'activité-->
+            <div class="form-field">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" placeholder="entrer le  de l'activité" >
+                <span id="name-error" class="error-message"></span>
+            </div>
+
+            <!--Description de l'activité-->
+            <div class="form-field">
+                <label for="description">Description</label>
+                <textarea id="description" name="description"></textarea>
+                <span id="description-error" class="error-message"></span>
+            </div> 
+
+            <!--Saison de pratique de l'activité-->
+            <div class="form-field">
+                <label for="season">Saison</label>
+                <select id="season" name="season">
+                    <option value="">Sélectionner la saison</option>
+                    <option value="été">Été</option>
+                    <option value="automne">Automne</option>
+                    <option value="hiver">Hiver</option>
+                    <option value="printemps">Printemps</option>
+                </select>
+                <span id="season-error" class="error-message"></span>
+            </div> 
+
+            
+
+
+            <button type="submit">Ajouter</button>
+
+
+            <div id="result-message">
+            </div>
+
+        </form>
+    </div>
+
+    <script src="../js/activity.js"></script>
+</body>
+</html>
